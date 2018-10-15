@@ -23,7 +23,10 @@ def quit(source):
 # Update Jenkins statuses
 ##############################
 def jenkis_update():
-    file = open("config.json", "r")
+    try:
+        file = open("config.json", "r")
+    except IOError:
+        return "cannot read config.json"
     data = json.loads(file.read())
     host = data["host"]
     string = ""
@@ -37,7 +40,7 @@ def jenkis_update():
                 result = "BUILDING"
             string = string + " " + name + ":" + result
         except IOError:
-            string = "NO CONN..."
+            return "cannot connect..."
     return string + " "
 
 
