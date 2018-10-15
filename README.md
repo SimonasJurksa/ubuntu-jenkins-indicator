@@ -21,5 +21,5 @@ python jenkins-indicator.py
  * Extend to use multiple hosts.
  * Make configurable iteration time per host.
 
-# Similar indicators:
+# Similar other Gnome indicators:
  * https://extensions.gnome.org/extension/399/jenkins-ci-server-indicator/ - shows you all jobs without posibility to filter.
