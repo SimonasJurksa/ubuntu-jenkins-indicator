@@ -1,5 +1,6 @@
 # Ubuntu Jenkins Indicator
-Fetches JENKINS jobs via api and displays last job status in UBUNTU indication toolbar next to clock.
+Fetches JENKINS jobs via api and displays last build status next to its short title in UBUNTU indication toolbar next to clock.
+Refreshes it every 30 seconds.
 
 # Run using command line 
 python jenkins-indicator.py
