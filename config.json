@@ -1,0 +1,8 @@
+{
+  "host": "host-to-henkins.com:8080",
+  "jobs": {
+    "dev": "jenkins-build-dev",
+    "test": "jenkins-build-staging",
+    "prod": "jenkins-build-prod"
+  }
+}
