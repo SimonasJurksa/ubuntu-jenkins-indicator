@@ -43,7 +43,7 @@ def jenkis_update():
 
 # Update statuses
 def update_statuses(indicator):
-    jobStatus = solar_jenkis_update()
+    jobStatus = jenkis_update()
     indicator.set_label(jobStatus, "")
     return True
 
@@ -79,7 +79,7 @@ def main():
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
     # Update statuses every 60 seconds
-    updatetimer = gobject.timeout_add_seconds(60, update_statuses, indicator)
+    updatetimer = gobject.timeout_add_seconds(1, update_statuses, indicator)
 
     # Start main loop
     gtk.main()
