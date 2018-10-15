@@ -81,8 +81,8 @@ def main():
     # Allow stop signal
     signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-    # Update statuses every 60 seconds
-    updatetimer = gobject.timeout_add_seconds(1, update_statuses, indicator)
+    # Update statuses every 30 seconds
+    updatetimer = gobject.timeout_add_seconds(30, update_statuses, indicator)
 
     # Start main loop
     gtk.main()
