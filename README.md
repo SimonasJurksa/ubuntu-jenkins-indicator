@@ -1,4 +1,4 @@
-# Ubuntu Jenkins Indicator
+# Ubuntu Jenkins Build Indicator
 Fetches JENKINS jobs via api and displays last build status next to its short title in UBUNTU indication toolbar next to clock.
 Refreshes it every 30 seconds.
 
