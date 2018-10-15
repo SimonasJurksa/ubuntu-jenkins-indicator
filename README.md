@@ -10,3 +10,6 @@ python jenkins-indicator.py
 # Config
  * Copy config_default.json to config.json
  * Edit `config.json` and add your data you want to monitor.
+ 
+ ![preview1](http://seemas.net/sites/default/files/2018-10/Selection_685.png)
+ ![preview1](http://seemas.net/sites/default/files/2018-10/Selection_686.png)
